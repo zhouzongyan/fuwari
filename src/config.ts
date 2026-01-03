@@ -11,7 +11,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "AcoFork Blog",
+	title: "周小天",
 	subtitle: "技术分享与实践",
 	description:
 		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为afoim/二叉树树",
@@ -25,14 +25,14 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: false,
-		src: "/xinghui.avif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "https://i0.wp.com/github.com/zhouzongyan/picx-images-hosting/raw/master/20260101/banner.4g4z0l120l.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: true, // Display the credit text of the banner image
+			enable: false, // Display the credit text of the banner image
 			text: "Pixiv @chokei", // Credit text to be displayed
 
-			url: "https://www.pixiv.net/artworks/122782209", // (Optional) URL link to the original artwork or artist's page
+			url: "https://i0.wp.com/github.com/zhouzongyan/picx-images-hosting/raw/master/20260101/banner.4g4z0l120l.webp", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	background: {
@@ -51,7 +51,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		{
-			src: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Path of the favicon, relative to the /public directory
+			src: "/assets/images/logo.png", // Path of the favicon, relative to the /public directory
 			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		},
@@ -78,7 +78,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "统计",
-			url: "https://umami.acofork.com/share/CdkXbGgZr6ECKOyK", // Internal links should not include the base path, as it is automatically added
+			url: "https://umami.183.co/share/zdCrIMzMGxsd6Rhr", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
@@ -90,8 +90,8 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "二叉树树",
+	avatar: "/assets/images/logo.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "周小天",
 	bio: "Protect What You Love.",
 	links: [
 		{
@@ -102,7 +102,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/afoim",
+			url: "https://github.com/zhouzongyan",
 		},
 	],
 };
@@ -121,8 +121,8 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://umami.acofork.com",
-	shareId: "CdkXbGgZr6ECKOyK",
+	baseUrl: "https://umami.183.co",
+	shareId: "zdCrIMzMGxsd6Rhr",
 	timezone: "Asia/Shanghai",
 };
 

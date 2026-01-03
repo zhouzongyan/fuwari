@@ -4,19 +4,23 @@ import type { MarkdownHeading } from "astro";
 import Profile from "./Profile.astro";
 
 interface Props {
-	class?: string;
-	headings?: MarkdownHeading[];
+  class?: string;
+  headings?: MarkdownHeading[];
 }
 
 const className = Astro.props.class;
 ---
+
 <div id="sidebar" class:list={[className, "w-full"]}>
-    <div class="flex flex-col w-full gap-4 mb-4">
-        <Profile></Profile>
-    </div>
-    <div id="sidebar-sticky" class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky top-4">
-        <!-- 赞助标 -->
-        <div class="overflow-hidden flex justify-center">
+  <div class="flex flex-col w-full gap-4 mb-4">
+    <Profile />
+  </div>
+  <div
+    id="sidebar-sticky"
+    class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky top-4"
+  >
+    <!-- 赞助标 -->
+    <!-- <div class="overflow-hidden flex justify-center">
             <a href="https://secbit.ai/" target="_blank" rel="noopener noreferrer">
                 <img src="/aff/secbit-banner-1.gif" alt="Secbit" class="w-full max-w-[280px] rounded-lg hover:opacity-90 transition-opacity" />
             </a>
@@ -27,9 +31,6 @@ const className = Astro.props.class;
                 style="border:none; border-radius:8px; height:270px; width:100%; max-width:280px;
                 transform: scale(1.0); transform-origin: center top;"
             ></iframe>
-        </div>
-    </div>
+        </div> -->
+  </div>
 </div>
-
-
-
