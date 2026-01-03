@@ -57,8 +57,9 @@ export const siteConfig: SiteConfig = {
 		},
 	],
 	officialSites: [
-		{ url: "https://acofork.com", alias: "EdgeOne CN" },
-		{ url: "https://2x.nz", alias: "Global" },
+		{ url: "https://wemang.com", alias: "EdgeOne CN" },
+		{ url: "https://chn.cc", alias: "Global" },
+		{ url: "https://chn.gg", alias: "Global" },
 	],
 };
 
