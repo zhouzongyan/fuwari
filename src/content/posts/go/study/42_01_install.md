@@ -3,7 +3,7 @@ title: "《Go语言四十二章经》第一章 Go安装与运行"
 categories: Golang
 tags: ["go", "安装", "环境配置", "基础教程"]
 id: "go-42-chapter-01-install"
-date: 2024-01-14 10:00:00
+published: 2024-01-14 10:00:00
 ---
 
 # 《Go语言四十二章经》第一章 Go安装与运行
