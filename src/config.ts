@@ -84,7 +84,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "状态",
-			url: "https://ok.2x.nz", // Internal links should not include the base path, as it is automatically added
+			url: "https://uptimeflare.wemang.com", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -95,11 +95,11 @@ export const profileConfig: ProfileConfig = {
 	name: "周小天",
 	bio: "Protect What You Love.",
 	links: [
-		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/325903362",
-		},
+		// {
+		// 	name: "Bilibli",
+		// 	icon: "fa6-brands:bilibili",
+		// 	url: "https://space.bilibili.com/325903362",
+		// },
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
