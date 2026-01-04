@@ -246,8 +246,8 @@ const bannerOffset =
 		<script defer src="https://umami.183.co/script.js" data-website-id="86451bbf-dab4-42c9-9254-646a1b1a6382"></script>
 		{/* - Umami分析（云-备用） 
 		<script defer src="https://cloud.umami.is/script.js" data-website-id="3ff57078-4462-44a1-8b8b-b82f6d4f3db7"></script> */}
-		<!-- 超级吊的Umami eop -->
-		<script defer src="https://eo-umami.acofork.com/script.js" data-website-id="3f525363-5e81-4653-9491-1bd205c2a571"></script>
+		<!-- 超级吊的Umami eop 
+		<script defer src="https://eo-umami.acofork.com/script.js" data-website-id="3f525363-5e81-4653-9491-1bd205c2a571"></script>-->
 		<!-- 百度统计 -->
 <script>
 var _hmt = _hmt || [];
@@ -676,7 +676,11 @@ window.onresize = () => {
 }
 
 </script>
-
+<script>
+	import InitFn from "@/scripts/Init";
+	// 全局初始化
+	InitFn();
+</script>
 <script>
 import { Fancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"

@@ -81,6 +81,9 @@
 		"@types/markdown-it": "^14.1.2",
 		"@types/mdast": "^4.0.4",
 		"@types/sanitize-html": "^2.15.0",
+		"@waline/client": "^3.8.0",
+		"dayjs": "^1.11.19",
+		"less": "^4.5.1",
 		"postcss-import": "^16.1.0",
 		"postcss-nesting": "^13.0.1",
 		"rehype": "^13.0.2"

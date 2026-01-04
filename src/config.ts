@@ -61,6 +61,19 @@ export const siteConfig: SiteConfig = {
 		{ url: "https://chn.cc", alias: "Global" },
 		{ url: "https://chn.gg", alias: "Global" },
 	],
+	// 评论组件（只允许同时开启一个）
+	Comment: {
+		// Twikoo 评论
+		Twikoo: {
+			enable: false,
+			envId: '',
+		},
+		// Waline 评论
+		Waline: {
+			enable: true,
+			serverURL: 'https://waline.chn.cc',
+		},
+	},
 };
 
 export const navBarConfig: NavBarConfig = {

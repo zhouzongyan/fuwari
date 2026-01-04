@@ -12,6 +12,7 @@ import PostMetadata from "../../components/PostMeta.astro";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import { profileConfig, siteConfig, umamiConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
+import Comment from "@/components/Comment/Comment.astro";
 
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
@@ -165,7 +166,7 @@ const jsonLd = {
             
 
             
-            <!-- Giscus 评论区 -->
+            <!-- Giscus 评论区 
             <script src="https://giscus.app/client.js"
                     data-repo="afoim/giscus-fuwari"
                     data-repo-id="R_kgDOOi8quw"
@@ -181,7 +182,8 @@ const jsonLd = {
                     data-loading="lazy"
                     crossorigin="anonymous"
                     async>
-            </script>
+            </script>-->
+        <Comment />
     <br>
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
