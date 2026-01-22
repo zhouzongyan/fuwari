@@ -76,7 +76,8 @@ const indexInit = async (only: boolean = true) => {
   // 谷歌 SEO 推送
   // SeoPushInit();
   // 文章评论初始化
-  checkComment && commentInit(checkComment(), commentLIst)
+  // TODO 暂时先屏蔽评论功能
+  // checkComment && commentInit(checkComment(), commentLIst)
   // Han Analytics 统计
   // HanAnalyticsInit();
   // 打字效果
