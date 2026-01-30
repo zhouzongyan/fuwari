@@ -84,12 +84,12 @@
           console.log("post.link", post.link);
 
           return {
-            url: url(`/posts/${post.link}/`),
+            url: url(`/${post.link}/`),
             meta: {
               title: post.title,
             },
             excerpt: highlightText(excerpt, keyword),
-            urlPath: `/posts/${post.link}`,
+            urlPath: `/${post.link}`,
           };
         });
 
@@ -132,7 +132,7 @@
           link:
             item
               .querySelector("link")
-              ?.textContent?.replace(/\/posts\/([^\/]+)/, "$1") || "",
+              ?.textContent?.match(/(\/posts\/.+)/)?.[1] || "",
         };
       });
     } catch (error) {
