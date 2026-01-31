@@ -31,7 +31,7 @@ const postUrl = decodeURIComponent(Astro.url.toString());
         console.log(`[license] old url: ${window.location.href}`);
         const url = new URL(window.location.href);
         url.search = '';
-        const address = url.toString();
+        const address = decodeURIComponent(url.toString());
         console.log(`[license] new url: ${address}`);
     
         currentLink.textContent = address;  // 显示文本 = 当前 URL
