@@ -109,6 +109,6 @@ export default () => {
     MusicList.forEach((i: any) => i.destroy());
     MusicList.length = 0;
   });
-  console.log("%c🌻 程序：Astro | 主题：vhAstro-Theme | 作者：Han | Github：https://github.com/zhouzongyan/fuwari 🌻", "color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
+  console.log("%c🌻 程序：Astro  | 作者：ZhouZhou | Github：https://github.com/zhouzongyan/fuwari 🌻", "color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
   console.log("%c\u521D\u59CB\u5316\u5B8C\u6BD5.", "color: #ffffff; background: #000; padding:5px");
 }
