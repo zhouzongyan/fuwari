@@ -59,7 +59,6 @@ export const siteConfig: SiteConfig = {
 	officialSites: [
 		{ url: "https://wemang.com", alias: "EdgeOne CN" },
 		{ url: "https://chn.cc", alias: "Global" },
-		{ url: "https://chn.gg", alias: "Global" },
 	],
 	// 评论组件（只允许同时开启一个）
 	Comment: {
