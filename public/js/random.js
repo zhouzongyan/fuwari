@@ -4,7 +4,7 @@
  */
 (() => {
 	var counts = { h: 979, v: 3596 };
-	var domain = "https://pic.acofork.com";
+	var domain = "https://rangdompic.chn.cc";
 
 	// State management for session consistency
 	var sessionRandomH = null;
