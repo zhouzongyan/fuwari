@@ -4,7 +4,7 @@ import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
 
 import MainGridLayout from "@layouts/MainGridLayout.astro";
-import { getSortedPosts } from "@utils/content-utils";
+import {  getCustomStaticPaths } from "@utils/content-utils";
 import { getDir, getPostUrlBySlug } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
 import { gitHubEditConfig, licenseConfig } from "src/config";
@@ -14,12 +14,10 @@ import { profileConfig, siteConfig, umamiConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
 import Comment from "@/components/Comment/Comment.astro";
 
+
 export async function getStaticPaths() {
-	const blogEntries = await getSortedPosts();
-	return blogEntries.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
-	}));
+	const paths = await getCustomStaticPaths();
+    return paths
 }
 
 const { entry } = Astro.props;

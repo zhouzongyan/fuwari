@@ -1,0 +1,21 @@
+---
+import { getCustomStaticPaths } from "@utils/content-utils";
+// SSG 必须有
+export async function getStaticPaths() {
+	const paths = await getCustomStaticPaths();
+    return paths
+}
+
+const slug = Astro.params.slug;
+const targetUrl = `/posts/${slug}/`;
+---
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content={`0; url=${targetUrl}`} />
+    <script>window.location.href = {targetUrl}</script>
+  </head>
+  <body>
+    Redirecting to <a href="{targetUrl}">{targetUrl}</a>
+  </body>
+</html>

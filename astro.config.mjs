@@ -36,7 +36,7 @@ export default defineConfig({
 	},
 	site: "https://blog.wemang.com",
 	base: "/",
-	trailingSlash: "always",
+	trailingSlash: "ignore",
 	output: "static",
 	redirects: {
 		"/donate": "/sponsors",
