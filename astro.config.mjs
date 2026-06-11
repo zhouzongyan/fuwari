@@ -6,7 +6,6 @@ import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 import swup from "@swup/astro";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
-import { defineConfig } from "astro/config";
 import { defineConfig, passthroughImageService } from "astro/config";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components"; /* Render the custom directive content */
@@ -40,7 +39,7 @@ export default defineConfig({
 	output: "static",
 	redirects: {
 		"/donate": "/sponsors",
-		"/umami":"https://umami.chn.cc/share/0w6fwvAvBzxdm310"
+		"/umami": "https://umami.chn.cc/share/0w6fwvAvBzxdm310",
 	},
 	integrations: [
 		tailwind({
@@ -62,7 +61,6 @@ export default defineConfig({
 		}),
 		icon({
 			include: {
-				"preprocess: vitePreprocess(),": ["*"],
 				"fa6-brands": ["*"],
 				"fa6-regular": ["*"],
 				"fa6-solid": ["*"],
@@ -74,7 +72,7 @@ export default defineConfig({
 		svelte(),
 		sitemap(),
 		expressiveCode({
-			themes: [expressiveCodeConfig.theme, expressiveCodeConfig.theme],
+			themes: [expressiveCodeConfig.theme],
 			plugins: [
 				pluginCollapsibleSections(),
 				pluginLineNumbers(),

@@ -8,11 +8,14 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"type-check": "tsc --noEmit --isolatedDeclarations",
+		"type-check": "tsc --noEmit",
+		"test:search": "tsc scripts/search-utils.test.ts --outDir .tmp/search-test --module NodeNext --moduleResolution NodeNext --target ES2022 --skipLibCheck --types node && node --test .tmp/search-test/scripts/search-utils.test.js",
 		"new-post": "node scripts/new-post.js",
 		"clean": "node scripts/clean-unused-images.js",
 		"format": "biome format --write ./src",
-		"lint": "biome check --write ./src"
+		"lint": "biome check --write ./src",
+		"lint:check": "biome check ./src",
+		"lint:fix": "biome check --write ./src"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
@@ -78,8 +81,10 @@
 		"@biomejs/biome": "1.9.4",
 		"@iconify-json/material-symbols-light": "^1.2.49",
 		"@rollup/plugin-yaml": "^4.1.2",
+		"@types/hast": "^3.0.4",
 		"@types/markdown-it": "^14.1.2",
 		"@types/mdast": "^4.0.4",
+		"@types/node": "^22.14.1",
 		"@types/sanitize-html": "^2.15.0",
 		"@waline/client": "^3.8.0",
 		"dayjs": "^1.11.19",
