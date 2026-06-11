@@ -40,7 +40,7 @@ export default defineConfig({
 	output: "static",
 	redirects: {
 		"/donate": "/sponsors",
-		"/umami":"https://umami.183.co/share/zdCrIMzMGxsd6Rhr"
+		"/umami":"https://cloud.umami.is/share/XXd0TYbsqYZUOJcT"
 	},
 	integrations: [
 		tailwind({
