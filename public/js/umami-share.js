@@ -85,14 +85,17 @@
 				endAt: currentTimestamp,
 				unit: "hour",
 				timezone: queryParams.timezone || "Asia/Shanghai",
-				compare: false,
 				...queryParams,
 			});
+			if (!["prev", "yoy"].includes(params.get("compare"))) {
+				params.delete("compare");
+			}
 
 			const statsUrl = `${baseUrl}/api/websites/${websiteId}/stats?${params.toString()}`;
 
 			const res = await fetch(statsUrl, {
 				headers: {
+					"x-umami-share-context": "1",
 					"x-umami-share-token": token,
 				},
 			});
