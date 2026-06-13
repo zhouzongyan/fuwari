@@ -2,11 +2,11 @@
 import { getCustomStaticPaths } from "@utils/content-utils";
 // SSG 必须有
 export async function getStaticPaths() {
-	const paths = await getCustomStaticPaths();
-    return paths
+	await getCustomStaticPaths();
+	return [];
 }
 
-const slug = Astro.params.slug.split("/").map(p => encodeURIComponent(p));
+const slug = Astro.params.slug.split("/").map((p) => encodeURIComponent(p));
 const targetUrl = `/posts/${slug.join("/")}/`;
 ---
 <html>

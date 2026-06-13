@@ -1,3 +1,4 @@
 /donate /sponsors 302
 /umami https://umami.chn.cc/share/0w6fwvAvBzxdm310 302
 /tit /posts/pin/ 302
+/article/* /posts/:splat 301
